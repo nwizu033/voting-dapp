@@ -1,0 +1,674 @@
+/* voting page styling */
+*{
+    margin: 0;
+}
+a{
+    color: inherit;
+}
+button:hover{
+    cursor: pointer;
+}
+
+body .container{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./images/vote-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container button:hover{
+    background-color: rgb(2, 37, 2);
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.container div{
+    height: 25%;
+}
+.container .heading{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+.container .heading h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 3em;
+    color: antiquewhite;
+}
+.container .heading p{
+    width: 75%;
+    align-self: center;
+    padding: 20px 10px;
+    text-align: justify;
+    font-size: 20px;
+    color: antiquewhite;
+    font-style: italic;
+}
+.heading div{
+    align-self: center;
+}
+.heading img{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.container .accredit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accredit span .del{
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 15px;
+}
+
+
+.container .voting{
+    width: 100%;
+    display: flex;
+    color: antiquewhite;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.container .voting div{
+    margin: 0 50px;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voting div img{
+    height: 250px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.result-button{
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 50px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid green;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.candidates{
+    font-size: 30px;
+}
+
+.score-board{
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+
+}
+
+.vote-button{
+    width: 100px;
+    padding: 5px 0;
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(4, 42, 4);
+    margin: 5px 0;
+
+}
+
+.sections{
+    color: antiquewhite;
+    background-color: rgb(13, 117, 100);
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.inputs{
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 70%;
+}
+
+.acc-buttons{
+    width:10%;
+    padding: 20px 0;
+    background-color: rgb(13, 117, 100);
+    color: antiquewhite;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+
+}
+.container .footer{
+    height: 20%;
+    color: antiquewhite;
+    margin-top: 50px;
+    display: flex;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.footer .copyright{
+    margin-right: 100px;
+}
+
+.footer .icons span{
+    margin: 0 20px;
+}
+
+
+
+
+
+
+/* Admin page styling */
+body .admin-container{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./images/vote-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.admin-container button:hover{
+    background-color: rgb(13, 117, 100);
+    color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-container img{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    margin-top: 100px;
+    border-radius: 50px;
+}
+
+.admin-container h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: antiquewhite;
+    margin-top: 10px;
+}
+
+.admin-container p{
+    text-align: center;
+    margin-top: 200px;
+    color: antiquewhite;
+    font-size: 1.5em;
+}
+
+.admin-container .note{
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.admin-container button{
+    width: 200px;
+    align-self: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    border: 2px solid rgb(13, 117, 100);
+    border-radius: 20px;
+    margin-top: 20px;    
+}
+.admin-container .vote-portal{
+    align-self: center;
+}
+
+
+
+.admin-container #openclose{
+    width: 200px;
+    align-self: center;
+    padding: 10px 20px;
+    border: 2px solid rgb(13, 117, 100);
+    margin-top: 10px;
+    background-color: antiquewhite;
+    color: rgb(13, 117, 100);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* Welcome page styling */
+body .welcome-container{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./images/vote-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-container img{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    margin-top: 100px;
+    border-radius: 50px;
+}
+
+.welcome-container h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: antiquewhite;
+    margin-top: 10px;
+}
+
+.welcome-container p{
+    text-align: center;
+    margin-top: 180px;
+    color: antiquewhite;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.welcome-container button{
+    width: 200px;
+    align-self: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    border: 2px solid rgb(13, 117, 100);
+    border-radius: 20px;
+    margin-top: 20px;    
+    color: rgb(13, 117, 100);
+}
+
+.welcome-container button:hover{
+    background-color: rgb(13, 117, 100);
+    color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ button .fa-long-arrow-right{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+
+/* media queries */
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    body .welcome-container{
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./images/vote-background.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .welcome-container img{
+        height: 50px;
+        width: 50px;
+        align-self: center;
+        margin-top: 50px;
+        border-radius: 50px;
+    }
+    
+    .welcome-container h1{
+        text-align: center;
+        font-size: 2em;
+        color: antiquewhite;
+        margin-top: 20px;
+    }
+    .welcome-container p{
+        text-align: center;
+        margin-top: 150px;
+        color: antiquewhite;
+        font-size: 1.1em;
+        font-style: italic;
+    }
+    
+    .welcome-container button{
+        width: 150px;
+        align-self: center;
+        padding: 8px 0;
+        font-size: 1.2em;
+        border: 2px solid rgb(13, 117, 100);
+        border-radius: 20px;
+        margin-top: 20px;    
+        color: rgb(13, 117, 100);
+    }
+    
+    .welcome-container button:hover {
+        background-color: rgb(13, 117, 100);
+        color: antiquewhite;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+     button .fa-long-arrow-right{
+        margin-left: 5px;
+        font-weight: bold;
+    }
+
+
+
+/* admin page  queries*/
+body .admin-container{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./images/vote-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.admin-container button:hover{
+    background-color: rgb(13, 117, 100);
+    color: antiquewhite;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-container img{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+.admin-container h1{
+    text-align: center;
+    font-size: 2em;
+    color: antiquewhite;
+    margin-top: 10px;
+}
+
+.admin-container p{
+    text-align: center;
+    margin-top: 100px;
+    color: antiquewhite;
+    font-size: 1.1em;
+}
+
+.admin-container .note{
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.admin-container button{
+    width: 150px;
+    align-self: center;
+    padding: 5px 0;
+    font-size: 1em;
+    border: 2px solid rgb(13, 117, 100);
+    border-radius: 20px;
+    margin-top: 20px;    
+}
+.admin-container .vote-portal{
+    align-self: center;
+}
+
+
+
+.admin-container #openclose{
+    width: 100px;
+    align-self: center;
+    padding: 5px 15px;
+    border: 2px solid rgb(13, 117, 100);
+    margin-top: 10px;
+    background-color: antiquewhite;
+    color: rgb(13, 117, 100);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+/* voting page queries */
+
+body .container{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./images/vote-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container button:hover{
+    background-color: rgb(2, 37, 2);
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.container div{
+    height: 25%;
+}
+.container .heading{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+.container .heading h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    color: antiquewhite;
+}
+.container .heading p{
+    width: 75%;
+    align-self: center;
+    padding: 20px 10px;
+    text-align: justify;
+    font-size: 18px;
+    color: antiquewhite;
+    font-style: italic;
+}
+.heading div{
+    align-self: center;
+}
+.heading img{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.container .accredit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .accredit span{
+    width: 100%;
+    text-align: center;
+
+}
+
+.accredit span .del{
+    color: antiquewhite;
+    margin-top: 18px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+.container .voting{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.container .voting div{
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.voting div img{
+    height: 200px;
+    width: 220px;
+    align-self: center;
+    border-radius: 50px;
+}
+
+.result-button{
+    width: 150px;
+    padding: 10px 0;
+    margin-top: 50px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid green;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.candidates{
+    font-size: 15px;
+    text-align: center;
+}
+
+.score-board{
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+.vote-button{
+    width: 100px;
+    padding: 5px 0;
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(4, 42, 4);
+    margin: 5px 0;
+
+}
+
+.sections{
+    color: antiquewhite;
+    background-color: rgb(13, 117, 100);
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.inputs{
+    padding: 20px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 2%;
+    width: 60%;
+    font-size: 10px;
+}
+
+.acc-buttons{
+    width:100px;
+    padding: 20px 0;
+    background-color: rgb(13, 117, 100);
+    color: antiquewhite;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 11.5px;
+
+}
+.container .footer{
+    height: 20%;
+    color: antiquewhite;
+    margin-top: 50px;
+    display: flex;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.footer .copyright{
+    margin-right: 50px;
+}
+
+.footer .icons span{
+    margin: 0 10px;
+}
+
+
+    
+}
+

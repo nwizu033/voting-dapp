@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voting portal</title>
+    <link rel="stylesheet" href="votingplatform.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"
+    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <div>
+                <img src="/images/inec2.jpeg">
+            </div>
+            <h1>Welcome to 2023 Presidential Elections voting portal</h1>
+            <p>Before you proceed, I want to remind you that this election is the most important 
+                election in the history of this country. The electoral body took the initiative 
+                of hosting it on the Blockchain to ensure it is credible. This gives you the right 
+                to select your leader and how you want to be governed in the next four years. There 
+                shall be no cancellation or irregularities because this system is the most credible 
+                in terms of elections. Kindly proceed as your votes will count this time around...
+            </p>
+        </div>
+
+        <h2 class="sections">--ACCREDITATION POINT--</h2>
+        <div class="accredit">
+            <span>
+                <input class="inputs" type="text" id="rightAddress" placeholder="Please enter your wallet address"> <button class="acc-buttons" id="rightButton">Get Accreditation</button>
+            </span>
+            <span>
+                <h3 class="del">If you don't want to vote, kindly delegate to someone else below <br>(note: delegate will vote their choice)</h3>
+            </span>
+            <span>
+                <input class="inputs" type="text" id="delAddress" placeholder="Enter delegate wallet address"> <button class="acc-buttons" id="delegateButton">Delegate</button>
+            </span>
+            
+        </div>
+    
+        <h2 class="sections">--VOTING POINT--</h2>
+        <div class="voting">
+            <div class="atiku-section">
+                <span>
+                    <img src="/images/Atiku-Abubakar.jpeg">
+                </span>
+                <span class="candidates" id="atiku"></span>
+                <Span>(PDP)</Span>
+                <span class="score-board" id="atikuvotes"></span>
+                <button class="vote-button" id="voteatiku">vote</button>
+            </div>
+            
+            <div class="tinubu-section">
+                <span>
+                    <img src="/images/Asiwaju.jpeg">
+                </span>
+                <span class="candidates"  id="tinubu"></span>
+                <Span>(APC)</Span>
+                <span class="score-board" id="tinubuvotes"></span>
+                <button class="vote-button" id="votetinubu">vote</button>
+            </div>
+
+            <div class="obi-section">
+                <span>
+                    <img src="/images/Peter-Obi.png">
+                </span>
+                <span class="candidates" id="obi"></span>
+                <Span>(LP)</Span>
+                <span class="score-board" id="obivotes"></span>
+                <button class="vote-button" id="voteobi">vote</button>
+            </div>
+        </div>
+
+        <button class="result-button" id="checkresult">See Results</button>
+      
+        <div class="footer">
+            <p class="copyright">@Copyright 2023</p>
+            <p>Visit our socials:</p>
+            <div class="icons">
+                <span><a href="https://github.com/nwizu033/blockchain-voting"><i class="fa fa-github-square" aria-hidden="true"></i></a></span>
+                <span><a href="https://twitter.com/chinwizu"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                <span><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+
+            </div>
+
+        </div>
+            
+    </div>
+   
+    <script src="votingplatfrom.js"></script>
+</body>
+</html>
